@@ -23,6 +23,10 @@ Ce qui ne fonctionne pas :
 ou bien la création d'une durée échoue.
 - L'affichage d'un visuel pour une revue
 
+fait avec eclipse.
+Ne pas oublier d'ajouter dans le VM -> --module-path "CHEMIN A INDIQUER" --add-modules javafx.controls,javafx.fxml
+Indiquer le chemin des fichiers Jars dans Build Path.
+
 Répartition des tâches :
 
 Hasan : 33%
