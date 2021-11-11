@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="405.0" prefHeight="470.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Revue.AfficherRevueController">
+   <children>
+      <GridPane prefHeight="287.0" prefWidth="540.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="366.79998779296875" minWidth="10.0" prefWidth="85.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="626.7999801635742" minWidth="10.0" prefWidth="355.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="36.0" minHeight="22.0" prefHeight="36.0" />
+          <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="138.4000259399414" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="144.4000183105469" minHeight="6.799993896484381" prefHeight="57.19999389648436" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="162.00000610351563" minHeight="10.0" prefHeight="57.20000610351565" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Titre : " GridPane.rowIndex="1" />
+            <Label text="Tarif : " GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="83.0" text="Id Periodicité : " GridPane.rowIndex="4" />
+            <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Description : " />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Label fx:id="labelTarif" alignment="CENTER" prefHeight="17.0" prefWidth="66.0" />
+                  <Label prefHeight="18.0" prefWidth="108.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="23.0" text="Id :" />
+            <Label fx:id="labelId" prefHeight="17.0" prefWidth="424.0" GridPane.columnIndex="1" />
+            <Label fx:id="labelTitre" prefHeight="17.0" prefWidth="424.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="labelDescription" alignment="TOP_LEFT" prefHeight="92.0" prefWidth="423.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="labelIdPeriodicite" prefHeight="17.0" prefWidth="426.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </VBox.margin>
+      </GridPane>
+      <HBox alignment="CENTER" prefHeight="29.0" prefWidth="600.0" style="-fx-spacing: 100;">
+         <children>
+            <Button fx:id="boutonRetour" mnemonicParsing="false" onAction="#boutonRetourClick" prefWidth="100.0" text="Retour" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

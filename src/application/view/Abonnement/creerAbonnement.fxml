@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Abonnement.CreerAbonnementController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="24.0" layoutY="135.0" prefHeight="231.0" prefWidth="552.0" AnchorPane.bottomAnchor="134.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="135.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="322.33331298828125" minWidth="10.0" prefWidth="237.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="552.3333358764648" minWidth="10.0" prefWidth="313.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="128.66666221618652" minHeight="10.0" prefHeight="51.66667079925537" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="145.66667938232422" minHeight="0.0" prefHeight="72.33334604899089" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="145.66667938232422" minHeight="10.0" prefHeight="60.66667175292969" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="145.66667938232422" minHeight="10.0" prefHeight="60.66667175292969" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="145.66667938232422" minHeight="10.0" prefHeight="60.66667175292969" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="18.0" prefWidth="100.0" text="Client : " GridPane.rowIndex="2" />
+            <DatePicker fx:id="datePickerDebut" prefWidth="200.0" GridPane.columnIndex="1" />
+            <DatePicker fx:id="datePickerFin" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label contentDisplay="CENTER" prefWidth="100.0" text="Date de début : " />
+            <Label prefWidth="100.0" text="Date de Fin : " GridPane.rowIndex="1" />
+            <Label prefWidth="100.0" text="Revue : " GridPane.rowIndex="3" />
+            <ChoiceBox fx:id="clientChoiceBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ChoiceBox fx:id="revueChoiceBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label prefWidth="100.0" text="Durée choisie : " GridPane.rowIndex="4" />
+            <ChoiceBox fx:id="choixIdDureeChoisie" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button fx:id="creerBouton" alignment="CENTER" contentDisplay="TOP" layoutX="426.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonCreerAbonnementClick" prefWidth="100.0" text="Créer" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="125.0" />
+      <Button fx:id="boutonAnnuler" layoutX="512.0" layoutY="452.0" mnemonicParsing="false" onAction="#boutonAnnulerClick" prefWidth="90.0" text="Annuler" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Label alignment="CENTER" layoutX="218.0" layoutY="59.0" prefWidth="150.0" text="Création d'un abonnement" AnchorPane.bottomAnchor="423.0" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="217.0" AnchorPane.topAnchor="59.0" />
+      <Label fx:id="affichage" layoutX="15.0" layoutY="394.0" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="571.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" />
+   </children>
+</AnchorPane>

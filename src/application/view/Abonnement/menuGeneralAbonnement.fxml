@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Abonnement.MenuGeneralAbonnementController">
+   <children>
+      <Button fx:id="boutonRetour" layoutX="486.0" layoutY="465.0" mnemonicParsing="false" onAction="#boutonRetourClick" prefWidth="90.0" text="Retour" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="24.0" />
+      <Button fx:id="btnModifier" layoutX="184.0" layoutY="465.0" mnemonicParsing="false" onAction="#btnModifierClick" prefWidth="90.0" text="Modifier" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="324.0" />
+      <Button fx:id="btnSupprimer" layoutX="383.0" layoutY="465.0" mnemonicParsing="false" onAction="#btnSupprimerClick" prefWidth="90.0" text="Supprimer" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="124.0" />
+      <Button fx:id="btnAjouter" layoutX="283.0" layoutY="465.0" mnemonicParsing="false" onAction="#btnAjouterClick" prefWidth="90.0" text="Nouveau" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="224.0" />
+      <TableView fx:id="tableViewAbonnement" layoutX="3.0" layoutY="50.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="65.0" text="ID" />
+            <TableColumn fx:id="colDateDebut" prefWidth="106.0" text="Date de debut" />
+            <TableColumn fx:id="colDateFin" prefWidth="109.0" text="Date de fin" />
+            <TableColumn fx:id="colIdClient" prefWidth="99.0" text="ID Client" />
+            <TableColumn fx:id="colIdRevue" prefWidth="97.0" text="ID Revue" />
+            <TableColumn fx:id="colonneIdDureeChoisie" prefWidth="123.0" text="ID Duree Choisie" />
+         </columns>
+      </TableView>
+      <Label layoutX="249.0" layoutY="14.0" text="Table Abonnement" />
+   </children>
+</AnchorPane>

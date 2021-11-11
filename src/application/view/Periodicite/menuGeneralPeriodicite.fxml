@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Periodicite.MenuGeneralPeriodiciteController">
+   <children>
+      <TableView fx:id="tableViewPeriodicite" layoutX="25.0" layoutY="80.0" prefHeight="341.0" prefWidth="548.0" AnchorPane.bottomAnchor="79.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="275.0" text="ID" />
+            <TableColumn fx:id="colLibelle" prefWidth="273.0" text="Libelle" />
+         </columns>
+      </TableView>
+      <Button fx:id="boutonRetour" layoutX="522.0" layoutY="446.0" mnemonicParsing="false" onAction="#boutonRetourClick" prefWidth="90.0" text="Retour" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Button fx:id="btnAjouter" layoutX="268.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnAjouterClick" prefWidth="90.0" text="Nouveau" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="325.0" />
+      <Button fx:id="btnModifier" layoutX="347.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnModifierClick" prefWidth="90.0" text="Modifier" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="225.0" />
+      <Button fx:id="btnSupprimer" layoutX="428.0" layoutY="446.0" mnemonicParsing="false" onAction="#btnSupprimerClick" prefWidth="90.0" text="Supprimer" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="125.0" />
+      <Label alignment="CENTER" layoutX="256.0" layoutY="30.0" prefWidth="100.0" text="Table Périodiicté" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="244.0" />
+   </children>
+</AnchorPane>

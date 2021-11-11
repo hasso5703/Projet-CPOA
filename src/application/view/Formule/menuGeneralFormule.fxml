@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Formule.MenuGeneralFormuleController">
+   <children>
+      <TableView fx:id="tableViewFormule" layoutX="26.0" layoutY="80.0" prefHeight="341.0" prefWidth="550.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="50.0">
+         <columns>
+            <TableColumn fx:id="colonneIdRevue" prefWidth="185.0" text="id_revue" />
+            <TableColumn fx:id="colonneIdDuree" prefWidth="161.0" text="id_duree" />
+            <TableColumn fx:id="colonneReduction" prefWidth="203.0" text="reduction" />
+         </columns>
+      </TableView>
+      <Button fx:id="boutonSupprimer" layoutX="166.0" layoutY="442.0" mnemonicParsing="false" onAction="#boutonSupprimerClick" prefWidth="90.0" text="Supprimer" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="325.0" />
+      <Button fx:id="boutonModifier" layoutX="257.0" layoutY="442.0" mnemonicParsing="false" onAction="#boutonModifierClick" prefWidth="90.0" text="Modifier" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="225.0" />
+      <Button fx:id="boutonAjouter" layoutX="340.0" layoutY="442.0" mnemonicParsing="false" onAction="#boutonAjouterClick" prefWidth="90.0" text="Ajouter" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="125.0" />
+      <Button fx:id="boutonRetour" layoutX="484.0" layoutY="442.0" mnemonicParsing="false" onAction="#boutonRetourClick" prefWidth="90.0" text="Retour" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="250.0" layoutY="14.0" prefHeight="20.0" prefWidth="100.0" text="Table Formule" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.dao.accueilController">
+   <children>
+      <ImageView fitHeight="105.0" fitWidth="456.0" layoutX="67.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="67.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="62.0">
+         <image>
+            <Image url="@../../../../../../../Pictures/logo/logo_large.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="choiceBoxPersistance" layoutX="250.0" layoutY="181.0" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="100.0" AnchorPane.topAnchor="181.0" />
+      <ButtonBar layoutX="-5.0" layoutY="250.0" prefHeight="101.0" prefWidth="600.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="5.0">
+         <buttons>
+            <Button fx:id="boutonRevue" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#boutonRevueClick" prefHeight="33.0" prefWidth="90.0" text="Revue" />
+            <Button fx:id="boutonAbonnement" alignment="CENTER" mnemonicParsing="false" onAction="#boutonAbonnementClick" prefHeight="33.0" prefWidth="90.0" text="Abonnement" />
+            <Button fx:id="boutonPeriodicite" mnemonicParsing="false" onAction="#boutonPeriodiciteClick" prefHeight="33.0" prefWidth="90.0" text="Périodicité" />
+            <Button fx:id="boutonClient" mnemonicParsing="false" onAction="#boutonClientClick" prefHeight="33.0" prefWidth="90.0" text="Client" />
+            <Button fx:id="boutonFormule" mnemonicParsing="false" onAction="#boutonFormuleClick" prefHeight="33.0" prefWidth="90.0" text="Formule" />
+            <Button fx:id="boutonDuree" mnemonicParsing="false" onAction="#boutonDureeClick" prefHeight="33.0" prefWidth="90.0" text="Duree" />
+         </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controler.Revue.MenuGeneralRevueController">
+   <children>
+      <TableView fx:id="tableViewRevue" layoutX="30.0" layoutY="76.0" prefHeight="348.0" prefWidth="541.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="85.0" text="ID" />
+            <TableColumn fx:id="colTitre" prefWidth="118.0" text="Titre" />
+            <TableColumn fx:id="colDescription" maxWidth="191.0" minWidth="-1.0" prefWidth="160.0" text="Description" />
+            <TableColumn fx:id="colTarifUnit" prefWidth="45.0" text="Tarif Unitaire" />
+            <TableColumn fx:id="colIdPeriodicite" prefWidth="133.0" text="ID Periodicite" />
+         </columns>
+      </TableView>
+      <Button fx:id="boutonRetour" layoutX="520.0" layoutY="475.0" mnemonicParsing="false" onAction="#boutonRetourClick" prefWidth="90.0" text="Retour" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <Button fx:id="btnAjouter" layoutX="199.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnAjouterClick" prefWidth="90.0" text="Nouveau" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="325.0" />
+      <Button fx:id="btnModifier" layoutX="331.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnModifierClick" prefWidth="90.0" text="Modifier" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="225.0" />
+      <Button fx:id="btnSupprimer" layoutX="432.0" layoutY="450.0" mnemonicParsing="false" onAction="#btnSupprimerClick" prefWidth="90.0" text="Supprimer" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="125.0" />
+      <Label alignment="CENTER" layoutX="250.0" layoutY="31.0" prefWidth="100.0" text="Table Revue" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" />
+   </children>
+</AnchorPane>
