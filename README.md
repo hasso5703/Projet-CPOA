@@ -26,11 +26,3 @@ ou bien la création d'une durée échoue.
 fait avec eclipse.
 Ne pas oublier d'ajouter dans le VM -> --module-path "CHEMIN A INDIQUER" --add-modules javafx.controls,javafx.fxml
 Indiquer le chemin des fichiers Jars dans Build Path.
-
-Répartition des tâches :
-
-Hasan : 33%
-
-Romain : 33% 
-
-Arnaud : 33%
