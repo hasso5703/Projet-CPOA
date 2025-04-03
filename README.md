@@ -1,28 +1,53 @@
-# Projet-CPOA-
-Ce qui fonctionne :
+# Projet-CPOA - Système de Gestion RevuesOnLine
 
-- Le Menu général
+## 📝 Description du projet
+Application de gestion développée en Java avec JavaFX permettant la gestion d'un système de revues en ligne. Le projet implémente un modèle DAO (Data Access Object) avec deux types de persistance de données : ListeMémoire (en mémoire) et MySQL (base de données).
 
-- Sélection de la ListeMémoire ou de MySQL
+## 🚀 Fonctionnalités
 
-- Les ajouts ListeMémoire et MySQL pour toutes les tables sauf Duree.
+### ✅ Fonctionnalités implémentées
+- Menu principal intuitif et complet
+- Choix entre deux modes de persistance : ListeMémoire ou MySQL
+- Gestion complète des données (CRUD) :
+  - Ajout de données pour toutes les tables (sauf quelques problèmes avec la table Duree)
+  - Suppression sécurisée avec fenêtre de confirmation
+  - Modification des données pour toutes les tables
+  - Affichage détaillé via double-clic pour toutes les tables
+- Importation de fichiers client au format CSV
 
-- Les suppressions ListeMémoire et MySQL pour toutes les tables
+### ❌ Problèmes connus
+- Valeur de `libelle_formule` de la table Durée apparaît comme "null" ou avec une valeur aléatoire après création
+- La création d'une durée peut échouer dans certains cas
+- L'affichage d'un visuel pour une revue n'est pas implémenté
 
-- Une fenêtre de confirmation lors de la suppression d'un élément
+## 🛠️ Technologies utilisées
+- Java
+- JavaFX pour l'interface utilisateur
+- Modèle DAO (Data Access Object)
+- MySQL pour la persistance en base de données
 
-- Les modifications ListeMémoire et MySQL pour toutes les tables
+## ⚙️ Installation et configuration
 
-- L'importation d'une fichier client .csv
+### Prérequis
+- Java Development Kit (JDK)
+- JavaFX SDK
+- Eclipse IDE (recommandé)
+- MySQL (optionnel, pour utiliser la persistance en base de données)
 
-- L'affichage avec le double clic pour toutes les tables
+### Configuration dans Eclipse
+1. Importer le projet dans Eclipse
+2. Ajouter les fichiers JAR nécessaires dans le Build Path
+3. Configurer les paramètres de la VM en ajoutant :
+   ```
+   --module-path "CHEMIN_VERS_JAVAFX_SDK" --add-modules javafx.controls,javafx.fxml
+   ```
+   Remplacer `CHEMIN_VERS_JAVAFX_SDK` par le chemin d'accès à votre installation JavaFX
 
-Ce qui ne fonctionne pas :
-
-- la valeur de libelle_formule de la table Durée apparait comme "null" ou nombre aléatoire après création bien que créé dans la base
-ou bien la création d'une durée échoue.
-- L'affichage d'un visuel pour une revue
-
-fait avec eclipse.
-Ne pas oublier d'ajouter dans le VM -> --module-path "CHEMIN A INDIQUER" --add-modules javafx.controls,javafx.fxml
-Indiquer le chemin des fichiers Jars dans Build Path.
+## 📋 Structure du projet
+- `src/application` : Point d'entrée de l'application et contrôleurs
+- `src/connexion` : Gestion des connexions à la base de données
+- `src/dao` : Interfaces DAO pour l'accès aux données
+- `src/factory` : Fabriques pour instancier les implémentations DAO
+- `src/liste_memoire` : Implémentation en mémoire des DAOs
+- `src/modele` : Classes modèles des objets métier
+- `src/normalisation` : Utilitaires de normalisation des données
